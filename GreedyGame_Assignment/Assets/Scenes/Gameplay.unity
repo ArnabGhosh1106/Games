@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d3901d2f76d091419fd9eefd66dcd78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomOutMin: 1
+  zoomOutMin: 5
   zoomOutMax: 1000
 --- !u!20 &519420031
 Camera:
