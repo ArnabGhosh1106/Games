@@ -32,8 +32,11 @@ public class Zoom : MonoBehaviour {
         }
         else if (Input.GetMouseButton(0))
         {
-            Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition); 
-            Camera.main.transform.position += direction;
+            if (Input.touchCount == 2)
+            {
+                Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Camera.main.transform.position += direction;
+            }
         }
         zoom(Input.GetAxis("Mouse ScrollWheel")); //for unity_editor
     }
